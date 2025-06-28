@@ -69,9 +69,9 @@ func main() {
 	var upper, lower, number, symbol bool
 
 	pflag.IntVarP(&length, "length", "L", 8, "Password Length")
-	pflag.BoolVarP(&upper, "upper", "u", false, "Using Upper case (A-Z)")
-	pflag.BoolVarP(&lower, "lower", "l", false, "Using Lower case (a-z)")
-	pflag.BoolVarP(&number, "number", "n", false, "Using Number (0-9)")
+	pflag.BoolVarP(&upper, "upper", "u", true, "Using Upper case (A-Z)")
+	pflag.BoolVarP(&lower, "lower", "l", true, "Using Lower case (a-z)")
+	pflag.BoolVarP(&number, "number", "n", true, "Using Number (0-9)")
 	pflag.BoolVarP(&symbol, "symbol", "s", false, "Using Symbol (!@#$...)")
 
 	// Help message custom
